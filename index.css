@@ -669,9 +669,12 @@
     display: flex;
     justify-content: center;
 }
+.all{
+    
+}
 .albom {
     width: 360px;
-    height: 389px;
+    height: 480px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -714,7 +717,20 @@
     color: #666666;
     font-size: 15px;
 }
+.pictures{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
 
+.col_end{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
 /* media queries start */
 
 @media screen and (max-width: 1268px) {
