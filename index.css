@@ -717,12 +717,12 @@
     color: #666666;
     font-size: 15px;
 }
-.pictures{
+.picture{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    grid-template-rows: 338px 338px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
 }
 
 .col_end{
@@ -731,6 +731,97 @@
     grid-column-start: 4;
     grid-column-end: 5;
 }
+.lost{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.col_start{
+    background-image: url(img/gallery-1.jpg);
+}
+.col_2{
+    background-image: url(img/gallery-2.jpg);
+}
+.col_3{
+    background-image: url(img/gallery-3.jpg);
+}
+.col_4{
+    background-image: url(img/gallery-5.jpg);
+}
+.col_5{
+    background-image: url(img/gallery-6.jpg);
+}
+.col_6{
+    background-image: url(img/gallery-7.jpg);
+}
+.col_end{
+    background-image: url(img/gallery-4.jpg);
+}
+.care_tips{
+    padding-top: 50px;
+}
+.care_t {
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.car_left p {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+        sans-serif;
+    color: #968B88;
+    font-size: 15px;
+}
+.car_left h3 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: #111111;
+    font-size: 30px;
+}
+.car_right a {
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #13a2b7;
+    padding: 15px 40px 15px 40px;
+    color: #111111;
+    font-family: monospace;
+    font-size: 15px;
+}
+.ts_f{
+    display: flex;
+    justify-content: space-between;
+}
+.exercise{
+    width: 360px;
+    height: 213px;
+    border: 1px solid red;
+}
+.exercise a{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    color: #111111;
+    text-decoration: none;
+    font-weight: bold;
+}
+.exercise a:hover{
+    text-decoration: underline;
+}
+.exercise p{
+    font-family:monospace;
+    font-size: 18px;
+    color: #666666;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.kot{
+    display: flex;
+    align-items: center;
+}
+.exercise ul li {
+    display: inline-block;
+}
+.exercise ul li img{
+    border-radius: 50%;
+}
+
 /* media queries start */
 
 @media screen and (max-width: 1268px) {
@@ -771,6 +862,11 @@
     }
     .equipment_left {
         margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .lost{
+        background-position: center;
     }
 }
 
@@ -937,6 +1033,19 @@
     .dd{
         margin-right: 0;
     }
+    .picture{
+        grid-template-columns: 1fr;
+        grid-template-rows: 338px 338px 338px 700px 338px 338px 338px;
+    }
+    .col_end{
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    } 
+    .lost{
+        background-position: inherit;
+    }
    
 }
 @media screen and (max-width: 750px) {
@@ -953,6 +1062,12 @@
         justify-content: center;
     }
     .fa_left {
+        margin-right: 20px;
+    }
+    .care_t{
+        justify-content: center;
+    }
+    .car_left{
         margin-right: 20px;
     }
 }
@@ -1018,6 +1133,15 @@
         padding-top: 30px;
     }
     .facility_top {
+        align-items: flex-start;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 250px;
+    }
+    .care_tips {
+        padding-top: 30px;
+    }
+    .care_t {
         align-items: flex-start;
         justify-content: space-around;
         flex-direction: column;
