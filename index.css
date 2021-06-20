@@ -9,7 +9,7 @@
 .wrapper {
     width: 1200px;
     margin: 0 auto;
-    background-color: red;
+    /* background-color: red; */
 }
 .booble {
     width: 100%;
@@ -55,6 +55,9 @@
 }
 .icons i {
     margin-left: 20px;
+}
+.icons i:hover{
+    cursor:pointer;
 }
 .navigator_mobile {
     width: 100%;
@@ -853,7 +856,7 @@
 .footer_logo{
     width: 100%;
     height: 150px;
-    border-bottom: 1px solid #1E2829;
+    border-bottom: 2px solid #1E2829;
 }
 .footer_logo_top{
     height: 150px;
@@ -931,7 +934,6 @@
 .footer_locate .dream{
     width: 195px;
     height: 229px;
-    background-color: greenyellow;
 }
 
 .footer_locate .dream_contact{
@@ -940,7 +942,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 .footer_locate .dream h3{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -979,7 +981,45 @@
 }
 .xerite{
     position: absolute;
-    right: 195px;
+    right: 215px;
+}
+.footer_end{
+    background-color: #12191A;
+}
+.copyright{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copy_left{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #c4c4c4;
+    font-weight: 300;
+}
+.copy_right{
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #c4c4c4;
+    font-weight: 300;
+}
+.copy_right ul{
+    position: relative;
+}
+.copy_right ul li{
+    display: inline-block;
+    padding: 0 5px 0 5px;
+}
+.ic_po2{
+    position: absolute;
+    top: -3px;
+    padding-left: 5px;
+}
+.ic_po2 i{
+    font-size: 3px;
+}
+.privacy{
+    padding-left: 0;
 }
 
 /* media queries start */
@@ -1122,17 +1162,24 @@
         height: 262px;
     }
     .xerite{
-        top: 370px;
+        top: 350px;
         left: 40px;
     }
     .footer_locate{
         justify-content: center;
         height: 600px;
-        background-color: hotpink;
+        align-items: flex-start;
+        padding-top: 50px;
     }
     .footer_locate .dream iframe{
         width: 720px;
         height: 220px;
+    }
+    .copyright{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        line-height: 30px;
     }
    
 }
@@ -1288,12 +1335,15 @@
     .footer_locate .dream_contact{
         width: 270px;
         height: 239px;
+        position: relative;
+        right: 157px;
+        top: -40px;
     }
     .xerite{
-        top: 370px;
+        top: 310px;
         left: 300px;
     }
- .footer_locate .dream iframe{
+    .footer_locate .dream iframe{
         width: 270px;
         height: 239px;
     }
@@ -1433,6 +1483,24 @@
     .mar_up{
         margin-top: 0;
     }
+    .footer_locate{
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 1000px;
+        padding-left: 10px;
+    }
+    .footer_locate .dream_contact{
+        right: 0;
+        top: 0;
+    }
+    .xerite{
+        top: 793px;
+        left: 23px;
+    }
+ .footer_locate .dream iframe{
+        width: 500px;
+        height: 220px;
+    }
    
 }
 @media screen and (max-width: 550px) {
@@ -1484,6 +1552,17 @@
     .footer_logo_top{
         height: 330px;
     }
+    .xerite{
+        top: 793px;
+        left: 23px;
+    }
+    .footer_locate .dream iframe{
+        width: 450px;
+        height: 220px;
+    }
+    .copy_left{
+        text-align: center;
+    }
 }
 @media screen and (max-width: 500px) {
     .wrapper {
@@ -1504,6 +1583,11 @@
     }
     .footer_logo_top .sending button{
         right: 140px;
+    }
+  
+ .footer_locate .dream iframe{
+        width: 400px;
+        height: 220px;
     }
 }
 @media screen and (max-width: 450px) {
@@ -1535,6 +1619,10 @@
     }
     .footer_logo_top .sending button{
         right: 117px;
+    }
+    .footer_locate .dream iframe{
+        width: 350px;
+        height: 220px;
     }
  
 }
@@ -1588,6 +1676,23 @@
     .footer_logo_top .sending button{
         right: 77px;
     }
+    .xerite{
+        top: 793px;
+        left: 0;
+    }
+    .footer_locate .dream iframe{
+        width: 350px;
+        height: 220px;
+    }
+    .copyright{
+        height: 120px;
+        align-items: center;
+        justify-content: center;
+    }
+    .copyright{
+        text-align: center;
+        align-items: center;
+    }
 }
 @media screen and (max-width: 350px) {
     .wrapper {
@@ -1616,6 +1721,14 @@
     }
     .wallpaper{
         width: 320px;
+    }
+    .xerite{
+        top: 793px;
+        left: 5px;
+    }
+    .footer_locate .dream iframe{
+        width: 310px;
+        height: 220px;
     }
 }
 @media screen and (min-width: 850px) {
