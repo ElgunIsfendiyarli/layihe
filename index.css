@@ -9,7 +9,7 @@
 .wrapper {
     width: 1200px;
     margin: 0 auto;
-    /* background-color: red; */
+    /* background-color: green; */
 }
 .booble {
     width: 100%;
@@ -1086,7 +1086,6 @@
     position: relative;
     width: 555px;
     height: 366px;
-    background: coral;
     background-image: url(img/video.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1111,21 +1110,34 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     color: #88888F;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 
 }
 .clinic_list ul{
     list-style-type: none;
+    margin-bottom: 30px;
 }
 .clinic_list ul li{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     color: #88888F;
+    padding-bottom: 10px;
 }
 .clinic_list ul i{
     font-size: 12px;
     color: #13A2B7;
     margin-right: 15px;
+}
+.clinic_list a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #13A2B7;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 2px solid #13a2b7;
+    padding: 12px 30px 10px;
+    font-weight: 600;
 }
 /* media queries start */
 
@@ -1168,6 +1180,14 @@
         width: 290px;
         height: 262px;
     }
+    .clinic_img{
+        width: 480px;
+        height: 424px;
+    }
+    .clinic_list{
+        width: 480px;
+        height: 424px;
+    }
 }
 
 @media screen and (max-width: 1244px) {
@@ -1192,6 +1212,17 @@
     .footer_locate .dream_contact{
         width: 300px;
         height: 229px;
+    }
+    .clinic_img{
+        width: 430px;
+        height: 449px;
+    }
+    .clinic_list{
+        width: 430px;
+        height: 449px;
+    }
+    .clinic_list ul{
+        margin-bottom: 50px;
     }
 }
 @media screen and (max-width: 1200px) {
@@ -1285,6 +1316,14 @@
         align-items: center;
         justify-content: center;
         line-height: 30px;
+    }
+    .clinic_img{
+        width: 350px;
+        height: 409px;
+    }
+    .clinic_list{
+        width: 350px;
+        height: 409px;
     }
    
 }
@@ -1451,6 +1490,20 @@
     .footer_locate .dream iframe{
         width: 270px;
         height: 239px;
+    }
+    .clinic{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .clinic_img{
+        width: 540px;
+        height: 406px;
+        margin-bottom: 30px;
+    }
+    .clinic_list{
+        width: 540px;
+        height: 356px;
     }
    
 }
@@ -1668,6 +1721,13 @@
     .copy_left{
         text-align: center;
     }
+    .clinic_img{
+        width: 450px;
+    }
+    .clinic_list{
+        width: 450px;
+        height: 400px;
+    }
 }
 @media screen and (max-width: 500px) {
     .wrapper {
@@ -1693,6 +1753,12 @@
  .footer_locate .dream iframe{
         width: 400px;
         height: 220px;
+    }
+    .clinic_img{
+        width: 430px;   
+    }
+    .clinic_list{
+        width: 430px;
     }
 }
 @media screen and (max-width: 450px) {
@@ -1728,6 +1794,12 @@
     .footer_locate .dream iframe{
         width: 350px;
         height: 220px;
+    }
+    .clinic_img{
+        width: 380px;   
+    }
+    .clinic_list{
+        width: 380px;
     }
  
 }
@@ -1797,6 +1869,14 @@
     .copyright{
         text-align: center;
         align-items: center;
+    }
+    .clinic_img{
+        width: 315px; 
+        height: 380px;  
+    }
+    .clinic_list{
+        width: 315px;
+        height: 430px;
     }
 }
 @media screen and (max-width: 350px) {
