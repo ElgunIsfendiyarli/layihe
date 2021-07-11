@@ -332,6 +332,9 @@
     display: inline-block;
     margin-right: 5px;
 }
+.banner_2_text ul li span{
+    color: #4A82AB;
+}
 .banner_2_text ul li .pot{
     font-size: 3px;
     color: white;
@@ -1036,6 +1039,7 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .copy_left{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #c4c4c4;
@@ -1054,6 +1058,7 @@
     display: inline-block;
     padding: 0 5px 0 5px;
 }
+
 .ic_po2{
     position: absolute;
     top: -3px;
@@ -1139,6 +1144,166 @@
     padding: 12px 30px 10px;
     font-weight: 600;
 }
+.doctor{
+    margin-top: 60px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.doctor_left{
+    width: 585px;
+    height: 490px;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+}
+.down_left_img{
+    width: 490px;
+    height: 490px;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    box-shadow: 0 3px 10px rgb(48 68 78 / 20%);
+
+}
+.down_left_img img{
+    border-radius: 50%;
+
+}
+.doctor_right{
+    padding: 20px;
+    width: 585px;
+    height: 490px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+}
+.doctor_right_text{
+    width: 555px;
+    height: 455px;
+}
+.doctor_right span{
+    color: #3FA2B9;
+    font-weight: bold;
+}
+.doctor_right h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    color: #111111;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.doctor_right p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: #88888F;
+    margin-bottom: 30px;
+
+}
+
+
+.doctor_right ul{
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+.doctor_right ul li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: #88888F;
+    padding-bottom: 10px;
+}
+.doctor_right ul i{
+    font-size: 12px;
+    color: #13A2B7;
+    margin-right: 15px;
+}
+.doctor_right_icons{
+    display: flex;
+}
+.deep{
+    text-align: center;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #F2F7F8;
+    margin-right: 10px;
+
+}
+.doctor_right_icons i{
+    color: #111111;
+}
+
+.money{
+    width: 360px;
+    height: 630px;
+    /* background-color: red; */
+    border-radius: 20px;
+    margin-top: 80px;
+    mar
+    box-shadow: rgb(0 61 85 / 10%) 0px 5px 15px;
+}
+.money_header{
+    width: 360px;
+    height: 185px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0F5F6;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.money_header p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #422D11;
+    font-size: 15px;
+    font-weight: bold;
+}
+.money_header h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #13A2B7;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.money_header span{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #422D11;
+    font-size: 15px;
+    font-weight: bold;
+}
+.money_text{
+    width: 360px;
+    height: 445px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.money_text ul{
+    list-style-type: none;
+}
+.money_text ul li h4{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #888888;
+    font-size: 15px;
+}
+.money_text ul li{
+    margin-bottom: 25px;
+}
+.money_text ul li span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: #4C4C4C;
+}
+
+
+
+
+
+
+
 /* media queries start */
 
 @media screen and (max-width: 1270px) {
@@ -1187,6 +1352,18 @@
     .clinic_list{
         width: 480px;
         height: 424px;
+    }
+    .doctor_left{
+        width: 480px;
+    }
+    .down_left .down_left_img{
+        width: 450px;
+    }
+    .doctor_right{
+        width: 480px;
+    }
+    .doctor_right .doctor_right_text{
+        width: 450px;
     }
 }
 
@@ -1324,6 +1501,23 @@
     .clinic_list{
         width: 350px;
         height: 409px;
+    }
+    .doctor_left{
+        width: 380px;
+    }
+    .down_left_img{
+        width: 370px;
+        height: 370px;
+    }
+    .down_left_img img{
+        width: 350px;
+        height: 350px;
+    }
+    .doctor_right{
+        width: 380px;
+    }
+    .doctor_right .doctor_right_text{
+        width: 350px;
     }
    
 }
@@ -1505,7 +1699,38 @@
         width: 540px;
         height: 356px;
     }
-   
+    .doctor{
+        flex-direction: column;
+        align-items: center;
+    }
+    .doctor_left{
+        width: 585px;
+        height: 490px;
+    }
+    .down_left_img{
+        width: 490px;
+        height: 490px;
+        display: flex;
+        justify-content: center;
+    }
+    .down_left_img img{
+        width: 470px;
+        height: 470px;
+    }
+    .doctor_right{
+        display: flex;
+        justify-content: center;
+        width:585px;
+        height: 490px;
+        text-align: center;
+    }
+    .doctor_right .doctor_right_text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 550px;
+        height: 450px;
+    }
 }
 @media screen and (max-width: 750px) {
     .banner_text {
@@ -1577,6 +1802,27 @@
     }
     .footer_logo_top .sending input {
         width: 470px;
+    }
+    .doctor_left{
+        width: 530px;
+        height: 490px;
+    }
+    .down_left_img{
+        width: 490px;
+        height: 490px;
+    }
+    .down_left_img img{
+        width: 470px;
+        height: 470px;
+    }
+    .doctor_right{
+        width:530px;
+        height: 490px;
+        text-align: center;
+    }
+    .doctor_right .doctor_right_text{
+        width: 510px;
+        height: 450px;
     }
    
 }
@@ -1728,6 +1974,27 @@
         width: 450px;
         height: 400px;
     }
+    .doctor_left{
+        width: 430px;
+        height: 460px;
+    }
+    .down_left_img{
+        width: 430px;
+        height: 460px;
+    }
+    .down_left_img img{
+        width: 407px;
+        height: 440px;
+    }
+    .doctor_right{
+        width:430px;
+        height: 490px;
+        text-align: center;
+    }
+    .doctor_right .doctor_right_text{
+        width: 510px;
+        height: 450px;
+    }
 }
 @media screen and (max-width: 500px) {
     .wrapper {
@@ -1760,6 +2027,7 @@
     .clinic_list{
         width: 430px;
     }
+   
 }
 @media screen and (max-width: 450px) {
     .wrapper {
@@ -1801,7 +2069,27 @@
     .clinic_list{
         width: 380px;
     }
- 
+    .doctor_left{
+        width: 380px;
+        height: 430px;
+    }
+    .down_left_img{
+        width: 400px;
+        height: 400px;
+    }
+    .down_left_img img{
+        width: 360px;
+        height: 380px;
+    }
+    .doctor_right{
+        width:380px;
+        height: 500px;
+        text-align: center;
+    }
+    .doctor_right .doctor_right_text{
+        width: 360px;
+        height: 460px;
+    }
 }
 @media screen and (max-width: 400px) {
     .wrapper {
@@ -1877,6 +2165,27 @@
     .clinic_list{
         width: 315px;
         height: 430px;
+    }
+    .doctor_left{
+        width: 320px;
+        height: 410px;
+    }
+    .down_left_img{
+        width: 320px;
+        height: 390px;
+    }
+    .down_left_img img{
+        width: 300px;
+        height: 370px;
+    }
+    .doctor_right{
+        width:320px;
+        height: 520px;
+        text-align: center;
+    }
+    .doctor_right .doctor_right_text{
+        width: 280px;
+        height: 480px;
     }
 }
 @media screen and (max-width: 350px) {
