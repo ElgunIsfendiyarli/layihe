@@ -1158,8 +1158,8 @@
     justify-content: center;
 }
 .down_left_img{
-    width: 490px;
-    height: 490px;
+    width: 470px;
+    height: 470px;
     border-radius: 50%;
     border: 10px solid #fff;
     box-shadow: 0 3px 10px rgb(48 68 78 / 20%);
@@ -1233,14 +1233,16 @@
 .doctor_right_icons i{
     color: #111111;
 }
-
+.cost{
+    display: flex;
+    justify-content: space-between;
+}
 .money{
     width: 360px;
     height: 630px;
-    /* background-color: red; */
     border-radius: 20px;
     margin-top: 80px;
-    mar
+    margin-bottom: 50px;
     box-shadow: rgb(0 61 85 / 10%) 0px 5px 15px;
 }
 .money_header{
@@ -1253,6 +1255,19 @@
     background-color: #F0F5F6;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    transition:all, 0.5s;
+}
+.money:hover .money_header{
+    background-color: #13A2B7;
+    height: 200px;
+}
+.money:hover a{
+    background-color: #13A2B7;
+    color: #fff;
+}
+
+.money:hover .money_header p,.money:hover .money_header h3,.money:hover .money_header span{
+    color: #fff;
 }
 .money_header p{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -1297,11 +1312,94 @@
     font-size: 15px;
     color: #4C4C4C;
 }
-
-
-
-
-
+.money_text a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 140px;
+    height: 40px;
+    border: 2px solid #13A2B7;
+    border-radius: 5px;
+    font-family:monospace;
+    font-size: 15px;
+    color: #112727;
+}
+.aligator{
+    padding-left: 17px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.alig{
+    width: 360px;
+    height: 390px;
+}
+.alig:hover .mours a{
+    text-decoration:underline;
+}
+.alig_img{
+    width: 360px;
+    height: 240px;
+    margin-bottom: 20px;
+}
+.alig_text{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mours{
+    width: 330px;
+}
+.alig_text a{
+    font-family: monospace;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+.drop{
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+.drop_image{
+    border-radius: 50%;
+}
+.drop_image img{
+    border-radius: 50%;
+}
+.drop ul{
+    position: relative;
+}
+.drop ul li {
+    display: inline-block;
+    font-family: monospace;
+    color: #ADB09A;
+    font-size: 15px;
+}
+.drop ul li img{
+    border-radius: 50%;
+}
+.drop_ic_po{
+    position: absolute;
+    top: 7px;
+}
+.drop ul  i{
+    font-size: 5px;
+}
+.drop ul li{
+    margin-left: 10px;
+}
+.drop ul li div{
+    height: 10px;
+    display: flex;
+    align-items: flex-start;
+}
 
 
 /* media queries start */
@@ -1365,6 +1463,22 @@
     .doctor_right .doctor_right_text{
         width: 450px;
     }
+    .aligator{
+        padding-left: 12px;
+    }
+    .alig{
+        width: 300px;
+    }
+    .alig .alig_img {
+        width: 300px;
+    }
+    .alig .alig_img img{
+        width: 300px;
+        height: 240px;
+    }
+    .mours{
+        width: 300px;
+    }
 }
 
 @media screen and (max-width: 1244px) {
@@ -1400,6 +1514,13 @@
     }
     .clinic_list ul{
         margin-bottom: 50px;
+    }
+    .cost{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .aligator{
+        padding-left: 2px;
     }
 }
 @media screen and (max-width: 1200px) {
@@ -1506,8 +1627,8 @@
         width: 380px;
     }
     .down_left_img{
-        width: 370px;
-        height: 370px;
+        width: 350px;
+        height: 350px;
     }
     .down_left_img img{
         width: 350px;
@@ -1519,7 +1640,24 @@
     .doctor_right .doctor_right_text{
         width: 350px;
     }
-   
+    .aligator{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        justify-content: space-around;
+    }
+    .alig{
+        width: 390px;
+    }
+    .alig .alig_img {
+        width: 390px;
+    }
+    .alig .alig_img img{
+        width: 390px;
+        height: 240px;
+    }
+    .mours{
+        width: 390px;
+    }
 }
 
 @media screen and (max-width: 860px) {
@@ -1703,13 +1841,14 @@
         flex-direction: column;
         align-items: center;
     }
+   
     .doctor_left{
         width: 585px;
         height: 490px;
     }
     .down_left_img{
-        width: 490px;
-        height: 490px;
+        width: 470px;
+        height: 470px;
         display: flex;
         justify-content: center;
     }
@@ -1730,6 +1869,33 @@
         align-items: center;
         width: 550px;
         height: 450px;
+    }
+    .cost{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .aligator{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-row-gap: 0;
+        padding-left:  5px;
+    }
+    .alig{
+        width: 600px;
+        height: 500px;
+    }
+    .alig .alig_img {
+        width: 600px;
+        height: 300px;
+    }
+    .alig .alig_img img{
+        width: 600px;
+        height: 300px;
+    }
+    .mours{
+        width: 600px;
+        height: 200px;
     }
 }
 @media screen and (max-width: 750px) {
@@ -1808,8 +1974,8 @@
         height: 490px;
     }
     .down_left_img{
-        width: 490px;
-        height: 490px;
+        width: 470px;
+        height: 470px;
     }
     .down_left_img img{
         width: 470px;
@@ -1824,7 +1990,25 @@
         width: 510px;
         height: 450px;
     }
-   
+    .aligator{
+        padding-left: 40px;
+    }
+    .alig{
+        width: 500px;
+        height: 500px;
+    }
+    .alig .alig_img {
+        width: 500px;
+        height: 300px;
+    }
+    .alig .alig_img img{
+        width: 500px;
+        height: 300px;
+    }
+    .mours{
+        width: 500px;
+        height: 200px;
+    }
 }
 @media screen and (max-width: 580px) {
     .wrapper {
@@ -1904,6 +2088,9 @@
  .footer_locate .dream iframe{
         width: 500px;
         height: 220px;
+    }
+    .aligator{
+        padding-left: 25px;
     }
    
 }
@@ -1995,6 +2182,25 @@
         width: 510px;
         height: 450px;
     }
+    .aligator{
+        padding-left: 15px;
+    }
+    .alig{
+        width: 470px;
+        height: 500px;
+    }
+    .alig .alig_img {
+        width: 470px;
+        height: 300px;
+    }
+    .alig .alig_img img{
+        width: 470px;
+        height: 300px;
+    }
+    .mours{
+        width: 470px;
+        height: 200px;
+    }
 }
 @media screen and (max-width: 500px) {
     .wrapper {
@@ -2027,7 +2233,25 @@
     .clinic_list{
         width: 430px;
     }
-   
+    .aligator{
+        padding-left: 30px;
+    }
+    .alig{
+        width: 400px;
+        height: 500px;
+    }
+    .alig .alig_img {
+        width: 400px;
+        height: 300px;
+    }
+    .alig .alig_img img{
+        width: 400px;
+        height: 300px;
+    }
+    .mours{
+        width: 400px;
+        height: 200px;
+    }
 }
 @media screen and (max-width: 450px) {
     .wrapper {
@@ -2089,6 +2313,24 @@
     .doctor_right .doctor_right_text{
         width: 360px;
         height: 460px;
+    }
+    .aligator{
+        padding-left: 25px;
+    }
+    .alig{
+        width: 350px;
+        height: 400px;
+    }
+    .alig .alig_img {
+        width: 350px;
+        height: 240px;
+    }
+    .alig .alig_img img{
+        width: 350px;
+        height: 240px;
+    }
+    .mours{
+        width: 350px;
     }
 }
 @media screen and (max-width: 400px) {
@@ -2187,6 +2429,32 @@
         width: 280px;
         height: 480px;
     }
+ 
+    .money{
+        width: 300px;
+    }
+    .money_header{
+        width: 300px;
+    }
+    .money_text{
+        width: 300px;
+    }
+    .aligator{
+        padding-left: 25px;
+    }
+    .alig{
+        width: 300px;
+    }
+    .alig .alig_img {
+        width: 300px;
+    }
+    .alig .alig_img img{
+        width: 300px;
+        height: 240px;
+    }
+    .mours{
+        width: 300px;
+    }
 }
 @media screen and (max-width: 350px) {
     .wrapper {
@@ -2223,6 +2491,9 @@
     .footer_locate .dream iframe{
         width: 310px;
         height: 220px;
+    }
+    .aligator{
+        padding-left: 10px;
     }
 }
 @media screen and (min-width: 850px) {
